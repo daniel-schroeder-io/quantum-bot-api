@@ -1,4 +1,4 @@
-//var TwitchAuthClient = require('./utils/TwitchAuth');
+var TwitchAuthClient = require('./utils/TwitchAuth');
 var express        = require('express');
 var session        = require('express-session');
 var passport       = require('passport');
