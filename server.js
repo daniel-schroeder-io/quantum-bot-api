@@ -5,7 +5,7 @@ var passport       = require('passport');
 var twitchStrategy = require('passport-twitch-new').Strategy;
 const cors = require('cors');
 const serveStatic = require("serve-static")
-const host = process.env.HOST || 'http://localhost'
+const host = process.env.HEROKU_APP_NAME || 'http://localhost'
 const port = process.env.PORT || '3000'
 require('dotenv').config();
 
