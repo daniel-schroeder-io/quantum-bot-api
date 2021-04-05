@@ -5,8 +5,8 @@ var passport       = require('passport');
 var twitchStrategy = require('passport-twitch-new').Strategy;
 const cors = require('cors');
 const serveStatic = require("serve-static")
-const host = process.env.host || 'http://localhost'
-const port = process.env.host || '3000'
+const host = process.env.HOST || 'http://localhost'
+const port = process.env.PORT || '3000'
 require('dotenv').config();
 
 console.log(host)
