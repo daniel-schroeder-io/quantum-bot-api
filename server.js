@@ -5,7 +5,7 @@ var passport       = require('passport');
 var twitchStrategy = require('passport-twitch-new').Strategy;
 const cors = require('cors');
 const serveStatic = require("serve-static")
-const host = process.env.HEROKU_APP_NAME || 'http://localhost'
+const host = process.env.HOST_URL || 'http://localhost'
 const port = process.env.PORT || '3000'
 require('dotenv').config();
 
@@ -15,7 +15,7 @@ console.log(port)
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const TWITCH_SECRET    = process.env.TWITCH_CLIENT_SECRET;
 const SESSION_SECRET   = '69696969';
-const CALLBACK_URL     = `${host}:${port}/auth/twitch/callback`;  // You can run locally with - http://localhost:3000/auth/twitch/callback
+const CALLBACK_URL     = `${process.env.HOST_URL}:${port}/auth/twitch/callback`;  // You can run locally with - http://localhost:3000/auth/twitch/callback
 
 // Initialize Express and middlewares
 var app = express(); 
