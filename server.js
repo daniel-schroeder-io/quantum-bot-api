@@ -21,7 +21,7 @@ const CALLBACK_URL     = process.env.TWITCH_CALLBACK_URL;  // You can run locall
 var app = express(); 
 app.use(session({secret: SESSION_SECRET, resave: false, saveUninitialized: false}));
 
-//const twitchAuthClient = new TwitchAuthClient();
+const twitchAuthClient = new TwitchAuthClient();
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors({origin: true, credentials: true})); 
