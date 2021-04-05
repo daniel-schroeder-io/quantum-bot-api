@@ -76,7 +76,7 @@ app.get('/', function (req, res) {
     });
     
   } else {
-    res.sendFile(path+'/login.html');
+    res.send(`Login needed`);
   }
 });
 
