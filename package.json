@@ -1,0 +1,27 @@
+{
+  "name": "quantum-bot-api",
+  "version": "1.0.0",
+  "description": "## Project setup ``` npm install ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-schroeder-io/quantum-bot-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-schroeder-io/quantum-bot-api/issues"
+  },
+  "homepage": "https://github.com/daniel-schroeder-io/quantum-bot-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotnet": "^1.1.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "passport": "^0.4.1",
+    "passport-twitch-new": "0.0.2"
+  }
+}
