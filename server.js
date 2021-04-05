@@ -15,7 +15,7 @@ console.log(port)
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const TWITCH_SECRET    = process.env.TWITCH_CLIENT_SECRET;
 const SESSION_SECRET   = '69696969';
-const CALLBACK_URL     = `https://quantum-bot-api.herokuapp.com/auth/twitch/callback`;  // You can run locally with - http://localhost:3000/auth/twitch/callback
+const CALLBACK_URL     = process.env.TWITCH_CALLBACK_URL;  // You can run locally with - http://localhost:3000/auth/twitch/callback
 
 // Initialize Express and middlewares
 var app = express(); 
