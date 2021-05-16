@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Boots",
+        "slot" : 1,
+        "base_value" : 10 
+    },
+    {
+        "name" : "Gloves",
+        "slot" : 1,
+        "base_value" : 10 
+    },
+    {
+        "name" : "Boots",
+        "slot" : 1,
+        "base_value" : 10 
+    },
+    {
+        "name" : "Boots",
+        "slot" : 1,
+        "base_value" : 10 
+    }
+]

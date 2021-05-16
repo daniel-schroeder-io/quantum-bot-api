@@ -1,0 +1,7 @@
+create table accounts (
+	user_id serial PRIMARY KEY,
+	twitch_id INT UNIQUE NOT NULL,
+	broadcaster VARCHAR ( 100 ) NOT NULL,
+	channel VARCHAR ( 100 ) NOT NULL,
+	created_on TIMESTAMP NOT NULL
+);
